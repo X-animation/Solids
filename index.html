@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>PyVista Mesh Gallery | معرض النماذج</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .mesh-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .mesh-item {
+      width: 220px;
+      background: #f0f4f9;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+      padding: 1rem;
+      transition: transform 0.2s;
+    }
+    .mesh-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .mesh-img {
+      width: 180px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      background: #eee;
+    }
+    .mesh-link {
+      font-size: 1.12rem;
+      color: #2a80c0;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    .mesh-desc {
+      font-size: 0.98rem;
+      color: #333;
+    }
+    .en {
+      direction: ltr;
+      text-align: left;
+      font-size: 0.9em;
+      margin-top: 0.3em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>معرض نماذج PyVista<br><span class="en">PyVista Mesh Gallery</span></h1>
+    <div class="mesh-list">
+      <!-- Mesh 1 -->
+      <div class="mesh-item">
+        <a class="mesh-link" href="randompoints.html">نقاط عشوائية<br><span class="en">Random Points</span></a>
+        <img class="mesh-img" src="images/randompoints.png" alt="Random Points Mesh">
+        <div class="mesh-desc">نموذج نقاط عشوائية في الفضاء ثلاثي الأبعاد.<br>
+          <span class="en">A random 3D points mesh.</span>
+        </div>
+      </div>
+      <!-- Mesh 2 -->
+      <div class="mesh-item">
+        <a class="mesh-link" href="simplecubicunitcell.html">خلية مكعبة بسيطة<br><span class="en">Simple Cubic Unit Cell</span></a>
+        <img class="mesh-img" src="images/simplecubicunitcell.png" alt="Simple Cubic Unit Cell Mesh">
+        <div class="mesh-desc">عرض لخلية وحدة مكعبة في الشبكة البلورية.<br>
+          <span class="en">A simple cubic unit cell crystal mesh.</span>
+        </div>
+      </div>
+      <!-- Add more mesh items in the same style -->
+    </div>
+  </div>
+</body>
+</html>
