@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <title>PyVista Mesh Gallery | معرض النماذج</title>
   <style>
+    .mesh-link-card {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: inherit;
+    }
+    .mesh-item {
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       background: #f8f9fa;
@@ -73,29 +85,34 @@
 </head>
 <body>
   <div class="container">
-    <h1>النماذج التفاعلية للمكعب البسيط<br><span class="en">Simple Cubic</span></h1>
-    <div class="mesh-list">
-      <!-- Mesh 1 -->
+    <h1>نظام المكعب<br><span class="en">Cubic System</span></h1>
+    <div class="mesh-list" style="grid-template-columns: repeat(3, 1fr); gap:2.5rem; justify-items:center;">
+      <!-- Simple Cubic -->
       <div class="mesh-item">
-        <a class="mesh-link" href="Constants_Lengths&Angles.html">طول الاضلاع والزوايا بينهم<br><span class="en">..</span></a>
-        <img class="mesh-img" src="images/constants.png" alt="Constants">
+        <a class="mesh-link-card" href="sc.html">
+          <div class="mesh-link" style="pointer-events:none;">المكعب البسيط<br><span class="en">Simple Cubic (SC)</span></div>
+          <img class="mesh-img" src="images/coordinationnumber.png" alt="Simple Cubic">
+          <div class="mesh-desc">نماذج تفاعلية للمكعب البسيط<br><span class="en">Interactive models for Simple Cubic structure</span></div>
+        </a>
       </div>
-      <!-- Mesh 2 -->
+      <!-- Body-Centered Cubic -->
       <div class="mesh-item">
-        <a class="mesh-link" href="SimpleCubicPariclesGroup.html">الجسيمات بحجمها الحقيقي<br><span class="en">..</span></a>
-        <img class="mesh-img" src="images/fullradiusatoms.png" alt="Full Radius Atoms">
+        <a class="mesh-link-card" href="bcc.html">
+          <div class="mesh-link" style="pointer-events:none;">مكعب متمركز الجسم<br><span class="en">Body-Centered Cubic (BCC)</span></div>
+          <img class="mesh-img" src="images/BCCImages/Lattice.png" alt="BCC">
+          <div class="mesh-desc">نماذج تفاعلية لمكعب متمركز الجسم<br><span class="en">Interactive models for BCC structure</span></div>
+        </a>
       </div>
-      <!-- Mesh 3 -->
+      <!-- Face-Centered Cubic -->
       <div class="mesh-item">
-        <a class="mesh-link" href="UnitCell.html">خلية الوحدة للمكعب البسيط<br><span class="en">Simple Cubic Unit Cell</span></a>
-        <img class="mesh-img" src="images/unitcell.png" alt="Simple Cubic Unit Cell">
-      </div>
-      <!-- Mesh 4 -->
-      <div class="mesh-item">
-        <a class="mesh-link" href="CoordNum.html">عدد التناسق<br><span class="en">Coordination Number</span></a>
-        <img class="mesh-img" src="images/coordinationnumber.png" alt="Coordination Number">
+        <a class="mesh-link-card" href="fcc.html">
+          <div class="mesh-link" style="pointer-events:none;">مكعب متمركز الوجه<br><span class="en">Face-Centered Cubic (FCC)</span></div>
+          <img class="mesh-img" src="images/FccImages/Lattice.png" alt="FCC">
+          <div class="mesh-desc">نماذج تفاعلية لمكعب متمركز الوجه<br><span class="en">Interactive models for FCC structure</span></div>
+        </a>
       </div>
     </div>
+    <p style="margin-top:3rem; color:#555; font-size:1.1rem;">اختر نوع الخلية البلورية للاطلاع على التفاصيل التفاعلية.<br><span class="en">Select a crystal structure to view interactive details.</span></p>
   </div>
 </body>
 </html>
